@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="shortcut icon" href="./assets/img/Favicon-32x32.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Monedas Nacional</h1>
+        <div class="form-group">
+            <label for="amount">Monto en CLP:</label>
+            <input type="number" id="amount" placeholder="Ingresa monto en pesos chilenos">
+        </div>
+        <div class="form-group">
+            <label for="currency">Moneda a Convertir:</label>
+            <select id="currency">
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">UF</option>
+            </select>
+        </div>
+        <button id="convert">Convertir</button> <!--Boton para hacer la conversion-->
+        <div id="result"></div> <!--Es para mostrar el resultado-->
+        <canvas id="chart" width="400" height="200"></canvas> <!--Canvas es para el grafico historico-->
+    </div>
+
+    <script src="./assets/JS/conversor.js"></script> <!--enlace que carga mi archivo .js a mi HTML-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--link que carga de charr.js para hacer el grafico-->
+
+</body>
+</html>
